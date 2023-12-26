@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Other Layout</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css' />
+  </head>
+  <body>
+   {{!-- Include Header --}}
+    {{#if header}}
+    {{>(header)}}
+    {{/if}}
+    {{!-- Include Body --}}
+    {{{body}}}
+    {{!-- Include Footer --}}
+    {{#if footer}}
+    {{>(footer)}}
+    {{/if}}
+  </body>
+</html>
