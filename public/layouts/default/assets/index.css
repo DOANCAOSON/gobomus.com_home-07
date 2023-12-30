@@ -180,6 +180,7 @@ border: 0;
 img {
 max-width: 100%;
 height: auto;
+object-fit: cover;
 }
 
 select {
@@ -7192,8 +7193,6 @@ z-index: 3;
   --widgets-spacing: 20px 20px;
 }
 
-{
-}
 
 h1.entry-title {
   display: var(--page-title-display);
@@ -10648,7 +10647,6 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
   --container-widget-height: initial;
   --container-widget-flex-grow: 0;
   --container-widget-align-self: initial;
-  --content-width: min(100%,var(--container-max-width,1140px));
   --width: 100%;
   --min-height: initial;
   --height: auto;

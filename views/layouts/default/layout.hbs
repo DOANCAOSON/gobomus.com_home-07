@@ -3,12 +3,13 @@
 <head>
   <meta charset='utf-8' />
   <title>{{title}}</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='layouts/default/assets/index.css' />
 </head>
 
 <body>
-  {{!-- Include Header --}}
+  <div id="site-inner">
+    {{!-- Include Header --}}
   {{#if header}}
   {{>header}}
   {{/if}}
@@ -17,6 +18,7 @@
   {{#if footer}}
   {{>footer}}
   {{/if}}
+  </div>
 </body>
 
 </html>
