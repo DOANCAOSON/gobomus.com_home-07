@@ -13,7 +13,7 @@ export class AppController {
     return res.render('layouts/default/index', {
       layout: this._service.getLayout(),
       title: 'Title Default',
-      message: 'Hello from Default Layout!',
+      message: '',
       header: {},
       footer: {},
       posts: [],

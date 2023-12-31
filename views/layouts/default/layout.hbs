@@ -4,21 +4,43 @@
   <meta charset='utf-8' />
   <title>{{title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel='stylesheet' href='layouts/default/assets/index.css' />
 </head>
 
 <body>
-  <div id="site-inner">
-    {{!-- Include Header --}}
-  {{#if header}}
-  {{>header}}
-  {{/if}}
-  {{{body}}}
-  {{!-- Include Footer --}}
-  {{#if footer}}
-  {{>footer}}
-  {{/if}}
+  <div class="p-[0px] lg:p-[50px] container--all">
+    <div class="container--all__list">
+      {{!-- Include Header --}}
+      {{#if header}}
+      {{>header}}
+      {{/if}}
+      {{{body}}}
+      {{!-- Include Footer --}}
+      {{#if footer}}
+      {{>footer}}
+      {{/if}}
+    </div>
   </div>
 </body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // Initialize Swiper
+  var mySwiper = new Swiper('.swiper-container', {
+    // Swiper options
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+</script>
 
 </html>
