@@ -4,6 +4,8 @@
   <meta charset='utf-8' />
   <title>{{title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -12,8 +14,8 @@
 </head>
 
 <body>
-  <div class="p-[0px] lg:p-[50px] container--all">
-    <div class="container--all__list">
+  <div class="px-[0] lg:p-[50px] container--all ">
+    <div class="container--all__list bg-[#fff] rounded  lg:rounded-[25px] ">
       {{!-- Include Header --}}
       {{#if header}}
       {{>header}}
@@ -32,6 +34,10 @@
 <script>
   var swiper = new Swiper(".mySwiper", {
     loop: true,
+    autoplay: {
+      delay: 5000, // Delay in milliseconds before switching to the next slide
+      disableOnInteraction: false, // Set to false if you want autoplay to continue even after interacting with the slider
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -41,7 +47,10 @@
       prevEl: ".swiper-button-prev",
     },
   });
+  
+
 </script>
+
 
 
 </html>

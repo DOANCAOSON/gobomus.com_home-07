@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif !important;
+
 }
 
 /* Minimal CSS Reset */
@@ -150,7 +152,7 @@ table {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   /* height: 100%; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .sub-menu {
@@ -399,4 +401,34 @@ li.menu-item:hover>.sub-menu {
 .mySwiper:focus .swiper-button-next,
 .mySwiper:focus .swiper-pagination {
   opacity: 1;
+}
+
+.slider-home{
+  transition: all 0.4s ease-in-out;
+}
+
+.slider:hover .slider-home{
+  transform: scale(1.1);
+}
+
+/* Ensures that navigation buttons are always visible */
+.swiper-button-next, .swiper-button-prev {
+  opacity: 1 !important; /* Override opacity */
+  visibility: visible !important; /* Ensure they are not set to invisible */
+  pointer-events: all !important; /* Make sure they are clickable */
+}
+
+/* featuredposts */
+.featuredposts:hover .featuredposts-img{
+  transform: scale(1.1);
+}
+
+.featuredposts-Position{
+ bottom: -200px;
+ transition: all .6s ease-in-out;
+}
+
+.featuredposts:hover .featuredposts-Position{
+  bottom: 0;
+
 }
