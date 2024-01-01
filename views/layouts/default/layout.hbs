@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+
   <link rel='stylesheet' href='layouts/default/assets/index.css' />
 </head>
 
@@ -26,21 +27,21 @@
   </div>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  // Initialize Swiper
-  var mySwiper = new Swiper('.swiper-container', {
-    // Swiper options
+  var swiper = new Swiper(".mySwiper", {
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
-
 </script>
+
 
 </html>
