@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
   <link rel='stylesheet' href='layouts/default/assets/index.css' />
 </head>
 
@@ -30,6 +31,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
   var swiper = new Swiper(".mySwiper", {
     loop: true,
@@ -47,6 +49,7 @@
     },
   });
 </script>
+
 <script>
   // Wait for the DOM to load
   document.addEventListener('DOMContentLoaded', (event) => {
@@ -80,7 +83,7 @@
   document.querySelectorAll('.accordion').forEach(button => {
     button.addEventListener('click', () => {
       const panel = button.nextElementSibling;
-      button.classList.toggle('bg-blue-400'); // Change color on click
+      button.classList.toggle('bg-blue-400');
       panel.classList.toggle('hidden');
     });
   });
@@ -97,6 +100,38 @@
       sidebarItem.style.display = "none";
     }
   });
+
+
+  document.querySelector('.clickable').addEventListener('click', function () {
+    if (sidebarItem.style.display === "block") {
+      sidebarItem.style.display = "none";
+    }
+  });
+
+  document.getElementById('sidebar').addEventListener('click', function () {
+    if (sidebarItem.style.display === "block") {
+      sidebarItem.style.display = "none";
+    }
+  });
+</script>
+
+<script>
+
+  document.querySelectorAll('.toggleMenu-list').forEach(function (toggleMenu) {
+    toggleMenu.addEventListener('click', function () {
+      let chapterList = this.nextElementSibling; // The UL element
+      // Toggle between classes
+      if (chapterList.classList.contains('hidden-height')) {
+        chapterList.classList.remove('hidden-height');
+        chapterList.classList.add('show');
+      } else {
+        chapterList.classList.remove('show');
+        chapterList.classList.add('hidden-height');
+      }
+    });
+  });
+
+
 </script>
 
 </html>

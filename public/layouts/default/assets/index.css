@@ -593,3 +593,25 @@ li.menu-item:hover>.sub-menu {
 .sideber-item {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* toggleMenu */
+.hidden-height{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out; /* Adjust time as needed */
+}
+
+.show{
+    /* Enough height to display all items. */
+    /* Alternatively, use max-height for variable item numbers or sizes. */
+    height: auto !important; /* Adjust based on content */
+    transition: height 0.5s ease-in; /* Adjust time as needed */
+}
+
+.rotate-icon {
+  transition: transform 0.5s ease; /* Smooth transition for 0.5 seconds */
+}
+
+.rotate-icon:hover {
+  transform: rotate(180deg); /* Rotate icon 180 degrees on hover */
+}

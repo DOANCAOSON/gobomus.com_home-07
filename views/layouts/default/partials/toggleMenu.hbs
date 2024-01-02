@@ -6,19 +6,84 @@
             <span></span>
         </span>
     </span>
-    <div style="display: none"
+    <div style="display: none" id="sidebar"
         class="sideber-item fixed top-0 bottom-0 right-0 left-0 z-[10000000] ease-in-out duration-500 ">
-        <div class="w-[500px] h-[100%] bg-[#fff]">
-            <div>
-                <div>
-                    <h2 class="text-[14px] toggleMenu-list">Drop Down Menu</h2>
+
+        <div class="w-[100%] md:w-[25%] lg:w-[25%] relative h-[100%] bg-[#fff] px-[60px]">
+            <div class="absolute right-6 top-2 flex justify-end">
+                <svg class="rotate-icon clickable" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 1024 1024">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926L224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512L166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z" />
+                </svg>
+            </div>
+            <div class="border-solid border-b-[1px]  border-[#e4e8ec] py-[40px] mb-[40px] ">
+                <div class="w-[130px] h-[40px]">
+                    <img src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/logo.svg"
+                        alt="toggleMenu-logo">
                 </div>
-                <ul>
-                    <li class="toggleMenu-list_text"><a href="#chapter1">Chapter 01</a></li>
-                    <li class="toggleMenu-list_text"><a href="#chapter2">Chapter 02</a></li>
-                    <li class="toggleMenu-list_text"><a href="#chapter3">Chapter 03</a></li>
-                    <li class="toggleMenu-list_text"><a href="#chapter4">Chapter 04</a></li>
+            </div>
+            <div class="w-[100%] ">
+                <div class="toggleMenu-list flex justify-between w-[100%] ">
+                    <div class="text-[16px]  leading-[45px] text-[#454955] ">
+                        Home
+                    </div>
+                    <div>
+                        {{!-- <i class="fa fa-chevron-down text-[20px]" aria-hidden="true"></i> --}}
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-[100%]">
+                <div class="toggleMenu-list flex justify-between w-[100%] ">
+                    <div class="text-[16px] leading-[45px] text-[#454955]">
+                        Travel
+                    </div>
+                    <div>
+                        {{!-- <i class="fa fa-chevron-down text-[20px]" aria-hidden="true"></i> --}}
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="w-[100%]">
+                <div class="toggleMenu-list flex item-center justify-between h-[auto] w-[100%]">
+                    <div class="text-[16px] w-[100%] h-[50px]  flex items-center justify-between text-[#454955]">
+                        <div class="leading-[45px]">
+                            Page
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 1024 1024">
+                                <path fill="currentColor"
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2L227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <ul class="hidden-height ease-in-out duration-300  px-[20px]">
+                    <li class="toggleMenu-list_text text-[14px] leading-[40px]  text-[#454955]"><a
+                            href="#chapter1">Shop</a></li>
+                    <li class="toggleMenu-list_text text-[14px] leading-[40px] text-[#454955]"><a href="#chapter2">About
+                            Us</a></li>
+                    <li class="toggleMenu-list_text text-[14px] leading-[40px]  text-[#454955]"><a
+                            href="#chapter3">Chapter 03</a></li>
+                    <li class="toggleMenu-list_text text-[14px] leading-[40px] text-[#454955]"><a
+                            href="#chapter4">Coming Soon</a></li>
                 </ul>
+            </div>
+
+            <div class="w-[100%]">
+                <div class="toggleMenu-list flex justify-between w-[100%] ">
+                    <div class="text-[16px] leading-[45px] text-[#454955]">
+                        Contact
+                    </div>
+                    <div>
+                        {{!-- <i class="fa fa-chevron-down text-[20px]" aria-hidden="true"></i> --}}
+                    </div>
+
+                </div>
             </div>
 
         </div>
