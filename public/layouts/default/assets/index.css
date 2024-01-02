@@ -403,32 +403,56 @@ li.menu-item:hover>.sub-menu {
   opacity: 1;
 }
 
-.slider-home{
+.slider-home {
   transition: all 0.4s ease-in-out;
 }
 
-.slider:hover .slider-home{
+.slider:hover .slider-home {
   transform: scale(1.1);
 }
 
 /* Ensures that navigation buttons are always visible */
-.swiper-button-next, .swiper-button-prev {
-  opacity: 1 !important; /* Override opacity */
-  visibility: visible !important; /* Ensure they are not set to invisible */
-  pointer-events: all !important; /* Make sure they are clickable */
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 1 !important;
+  /* Override opacity */
+  visibility: visible !important;
+  /* Ensure they are not set to invisible */
+  pointer-events: all !important;
+  /* Make sure they are clickable */
 }
 
 /* featuredposts */
-.featuredposts:hover .featuredposts-img{
+.featuredposts:hover .featuredposts-img {
   transform: scale(1.1);
 }
 
-.featuredposts-Position{
- bottom: -200px;
- transition: all .6s ease-in-out;
+.featuredposts-Position {
+  bottom: -200px;
+  transition: all .6s ease-in-out;
 }
 
-.featuredposts:hover .featuredposts-Position{
+.featuredposts:hover .featuredposts-Position {
   bottom: 0;
+}
 
+/* pagination */
+.pagination:hover span {
+  color: #cbccd6;
+}
+
+.pagination-border {
+  border: 1px solid #cbccd6;
+  /* Màu border bình thường */
+  transition: border-color 0.3s;
+  /* Transition cho hiệu ứng thay đổi màu */
+}
+
+.pagination-border.active {
+  border-color: #4e7be7;
+  /* Màu border khi active (clicked) */
+}
+
+.number.active {
+  color: #cbccd6;
 }

@@ -4,8 +4,8 @@ import { engine } from 'express-handlebars'
 import { join } from 'path'
 import { AppModule } from './app.module'
 
-import cookie from 'cookie-parser'
-import session from 'express-session'
+import * as cookie from 'cookie-parser'
+import * as session from 'express-session'
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule)
