@@ -20,6 +20,7 @@
       {{/if}}
       {{{body}}}
       {{!-- Include Footer --}}
+      {{>toggleMenu}}
       {{#if footer}}
       {{>footer}}
       {{/if}}
@@ -45,8 +46,6 @@
       prevEl: ".swiper-button-prev",
     },
   });
-
-
 </script>
 <script>
   // Wait for the DOM to load
@@ -77,6 +76,27 @@
 
 </script>
 
+<script>
+  document.querySelectorAll('.accordion').forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      button.classList.toggle('bg-blue-400'); // Change color on click
+      panel.classList.toggle('hidden');
+    });
+  });
+</script>
 
+{{!-- toggleMenu --}}
+<script>
+  var hamburger = document.querySelector('.offcanvas-opener');
+  var sidebarItem = document.querySelector('.sideber-item');
+  hamburger.addEventListener('click', function () {
+    if (sidebarItem.style.display === "none") {
+      sidebarItem.style.display = "block";
+    } else {
+      sidebarItem.style.display = "none";
+    }
+  });
+</script>
 
 </html>
